@@ -64,3 +64,34 @@ print (f'''le dernier 'th' se trouve à l'indice N°{phrase.rfind('th')}''')
 print ('{n} is the fucking {g}'.format(n='Sem' ,g= 'GOAT'))
 sub_string = 'ty'
 print ("le terme 'ty' se trouve a l'indice {n}".format(n=str( phrase.index(sub_string))))
+
+print (" \n=====les méthode de verification booléene====\n ")
+
+print (f"est ce que  'ThirtyDaysofpython' contient des espace? :\n{'ThirtyDaysofpython'.isalnum()} ")
+print (f"est ce que 'ThirtyDaysofpython' contient des lettres ?:\n{'ThirtyDaysofpython'.isalpha()} " )
+print ( f"est ce que '12324' sont des chiffre ?:\n {'1234'.isdecimal()}")
+print (f"est ce que '30' est un digit?:\n{'30'.isdigit()} ")
+print (f"est ce que 'thirty_days_of_python' est un bon nom de variable ?\n {'thirty_days_of_python' .isidentifier()} ")
+print (f"le terme ' THIRTY DAYS ' est il en majuscule ? :\n {'THIRTY DAYS' .isupper()} ")
+
+
+# assemblage et separation de chaine 
+
+
+web_tech = ['HTML', 'CSS', 'JavaScript']
+print(' '.join(web_tech))    # 'HTML CSS JavaScript'
+print('-'.join(web_tech))    # 'HTML-CSS-JavaScript'
+print('_'.join(web_tech))    # 'HTML_CSS_JavaScript'
+
+
+# split , replace , and strip 
+
+print ('  thirty days  '.strip())               # 'thirty days'  → enlève espaces début/fin
+print('thirty days of python'.replace('python', 'coding') ) # remplace une sous-chaîne
+print ('thirty days of python'.split())         # ['thirty', 'days', 'of', 'python']  → coupe sur les espaces par défaut
+print ('a, b, c'.split(', ') )                  # ['a', 'b', 'c']  → coupe sur un séparateur précis
+
+
+print('thirty days'.title())      # 'Thirty Days'  → majuscule à chaque mot
+print('Thirty Days'.swapcase() )  # 'tHIRTY dAYS'  → inverse chaque casse
+print('thirty days'.startswith('thirty'))  # True
