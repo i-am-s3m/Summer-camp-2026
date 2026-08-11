@@ -72,7 +72,7 @@ print (f"est ce que 'ThirtyDaysofpython' contient des lettres ?:\n{'ThirtyDaysof
 print ( f"est ce que '12324' sont des chiffre ?:\n {'1234'.isdecimal()}")
 print (f"est ce que '30' est un digit?:\n{'30'.isdigit()} ")
 print (f"est ce que 'thirty_days_of_python' est un bon nom de variable ?\n {'thirty_days_of_python' .isidentifier()} ")
-print (f"le terme ' THIRTY DAYS ' est il en majuscule ? :\n {'THIRTY DAYS' .isupper()} ")
+print (f"le terme ' THIRTY DAYS ' est il en majuscule ? :\n {'THIRTY DAYS'.isupper()} ")
 
 
 # assemblage et separation de chaine 
@@ -94,4 +94,4 @@ print ('a, b, c'.split(', ') )                  # ['a', 'b', 'c']  → coupe sur
 
 print('thirty days'.title())      # 'Thirty Days'  → majuscule à chaque mot
 print('Thirty Days'.swapcase() )  # 'tHIRTY dAYS'  → inverse chaque casse
-print('thirty days'.startswith('thirty'))  # True
+print('thirty days'.startswith('thirty'))  # True pour savoir si la structure de chaine commence par la sous chaine demandé 
